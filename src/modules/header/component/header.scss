@@ -1,39 +1,27 @@
-.header{
+.header {
   display: flex;
   justify-content: space-between;
   margin-bottom: 108px;
-  &__info{
+
+  &__info {
     display: flex;
   }
-}
 
-.basket{
-  &__img{
-    width: 100%;
+  &__option {
+    display: none;
   }
-  &__count{
-    color: aliceblue;
-    position: absolute;
-    top: -8px;
-    left: 16px;
-    z-index: 2;
-    background: #0B0C23;
-  }
-  &__area{
-    position: relative;
-  }
-}
 
-.info{
-  &__logo{
+  &__logo {
     width: 100%;
     margin-right: 27px;
   }
-  &__planet{
+
+  &__planet {
     width: 100%;
     margin-right: 15px;
   }
-  &__language{
+
+  &__language {
     background: none;
     border: none;
     color: #FFFFFF;
@@ -43,7 +31,64 @@
     text-indent: 1px;
     text-overflow: '';
   }
-  option{
-    background-color: #0B0C23;
+
+  &__small-logo {
+    width: 100%;
+  }
+
+  &__img {
+    width: 100%;
+  }
+}
+
+.basket {
+  &__img {
+    width: 100%;
+  }
+
+  &__count {
+    color: aliceblue;
+    position: absolute;
+    top: -8px;
+    left: 16px;
+    z-index: 2;
+    background: #0B0C23;
+  }
+
+  &__area {
+    position: relative;
+  }
+}
+
+.small-basket {
+  &__img {
+    width: 100%;
+  }
+
+  &__count {
+    color: aliceblue;
+    position: absolute;
+    top: -8px;
+    left: 16px;
+    z-index: 2;
+    background: #0B0C23;
+  }
+
+  &__area {
+    position: relative;
+  }
+}
+
+@media screen and (max-device-width: 1023px) {
+  .header__info {
+    display: none;
+  }
+  .header__option {
+    display: flex;
+    width: 100%;
+    justify-content: inherit;
+  }
+  .basket {
+    display: none;
   }
 }
