@@ -1,12 +1,11 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
+import { Header } from '../header';
 
-function App() {
+export const App = () => {
     return (
         <div className="App">
-            <header className="App-header">
-                Header
-            </header>
+            <Header/>
             <main>
                 Main
             </main>
@@ -15,6 +14,5 @@ function App() {
             </footer>
         </div>
     );
-}
+};
 
-export default App;
