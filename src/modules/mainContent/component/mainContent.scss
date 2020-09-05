@@ -1,0 +1,63 @@
+.mainContent {
+  margin: 159px 88px 100px 89px;
+  display: flex;
+  justify-content: space-between;
+
+  &__area {
+    display: flex;
+  }
+
+  &__banner {
+    width: 100%;
+  }
+
+  &__columnName {
+    color: #FFFFFF;
+    font-family: Exo, serif;
+    margin-bottom: 15px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 48px
+  }
+
+  &__sorting {
+    margin-right: 60px;
+  }
+}
+
+.sorting {
+  &__manufacturer,
+  &__minPrice,
+  &__maxPrice {
+    padding: 7px 88px 8px 11px;
+    width: 212px;
+    height: 30px;
+    font-family: Open Sans, serif;
+    font-style: normal;
+    line-height: 48px;
+    display: flex;
+    align-items: center;
+    mix-blend-mode: normal;
+    color: #FFFFFF;
+    background: #232439;
+    margin-bottom: 15px;
+    cursor: pointer;
+  }
+
+  &__maxPrice {
+    margin-bottom: 0 !important;
+  }
+}
+
+@media screen and (max-device-width: 1024px) {
+  .mainContent {
+    margin: 108px 88px 165px 88px;
+    display: flex;
+    justify-content: start;
+
+    &__news {
+      display: none;
+    }
+  }
+}
