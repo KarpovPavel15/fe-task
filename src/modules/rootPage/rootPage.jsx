@@ -1,16 +1,15 @@
 import React from 'react';
 import './root-page.scss';
-import { Header } from '../header';
-import { MainContent } from '../mainContent';
+import { HeaderContainer } from '../header';
+import { MainContentContainer } from '../mainContent';
+import { Footer } from '../footer';
 
 export const RootPage = () => {
     return (
         <div className="root-page">
-            <Header/>
-            <MainContent/>
-            <footer>
-                Footer
-            </footer>
+            <HeaderContainer/>
+            <MainContentContainer/>
+            <Footer/>
         </div>
     );
 };

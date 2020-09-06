@@ -4,9 +4,11 @@ import createSagaMiddleware from 'redux-saga';
 
 import { composeWithDevTools } from 'redux-devtools-extension';
 import { sagaMainPage } from '../modules/mainContent/sagas';
+import { sagaBasket } from '../modules/product/sagas';
 
 const sagas = [
-    sagaMainPage
+    sagaMainPage,
+    sagaBasket
 ];
 
 export const configureStore = () => {

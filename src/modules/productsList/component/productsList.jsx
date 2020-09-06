@@ -1,6 +1,6 @@
 import React from 'react';
 import './productsList.scss';
-import { Product } from '../../../components/product';
+import { ProductContainer } from '../../product';
 
 export const ProductsList = ({array, arr}) => {
 
@@ -18,7 +18,7 @@ export const ProductsList = ({array, arr}) => {
                     )
                 }
             </tr>
-            <Product arr={arr}/>
+            <ProductContainer arr={arr}/>
         </table>
     )
 };

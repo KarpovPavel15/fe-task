@@ -1,20 +1,9 @@
-import React, { useEffect } from 'react';
+import React  from 'react';
 import './mainContent.scss';
 import news from '../../../images/banner.svg';
 import { ProductsList } from '../../productsList';
-import { useDispatch, useSelector } from 'react-redux';
-import { setMainPageContentRequestAction } from '../actions';
 
-export const MainContent = () => {
-    let array = [null, null, 'Release', 'Manufacturer', 'Model', 'Hash', 'Algorithm', 'Efficiency', 'Profit', 'Price'];
-
-    let dispatch = useDispatch();
-    let {productsInfo} = useSelector(store => store);
-
-    useEffect(() => {
-        dispatch(setMainPageContentRequestAction())
-    },[]);
-
+export const MainContent = ({array,productsInfo}) => {
     return (
         <main className="mainContent">
             <div className="mainContent__area">
