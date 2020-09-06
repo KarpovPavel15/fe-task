@@ -1,0 +1,155 @@
+.productsList {
+  &__paragraphs {
+    height: 43px;
+    width: 700px;
+    font-family: Open Sans, serif;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    mix-blend-mode: normal;
+    color: #FFFFFF;
+    cursor: pointer;
+    background: #232439;
+    justify-content: space-evenly;
+  }
+
+  &__option {
+    margin: 0 10px 0 10px;
+  }
+
+  &__release {
+    margin-right: 10px;
+    margin-left: 35px;
+  }
+
+  &__hash {
+    margin: 0 30px 0 30px;
+  }
+
+  &__algorithm {
+    margin: 0 15px 0 15px;
+  }
+
+  &__efficiency {
+    margin: 0 25px 0 0;
+  }
+
+  &__profit {
+    margin: 0 45px 0 10px;
+  }
+
+  &__price {
+    margin: 0 23px 0 0;
+  }
+
+  &__star,
+  &__arrow,
+  &__release,
+  &__manufacturer,
+  &__model,
+  &__hash,
+  &__algorithm,
+  &__efficiency,
+  &__profit,
+  &__price {
+    display: flex;
+    font-size: 12px;
+  }
+}
+
+@media (min-device-width: 1151px) and (max-device-width: 1250px) {
+  .productsList {
+    &__paragraphs {
+      width: 615px !important;
+    }
+  }
+}
+
+@media (min-device-width: 1025px) and (max-device-width: 1150px) {
+  .productsList {
+    &__paragraphs {
+      width: 515px !important;
+    }
+
+    &__option {
+      margin: 0 !important;
+    }
+
+    &__model {
+      margin-right: 10px !important;
+    }
+
+    &__release {
+      margin-left: 40px !important;
+    }
+
+    &__hash {
+      margin: 0 0px 0 15px !important
+    }
+
+    &__algorithm {
+      margin: 0 0px 0 35px !important;
+    }
+
+    &__efficiency {
+      margin: 0 10px 0 10px !important;
+    }
+
+    &__profit {
+      margin: 0 27px 0 0px !important;
+    }
+
+    &__price {
+      margin: 0 40px 0 12px !important
+    }
+  }
+}
+
+@media screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+  .productsList {
+    &__paragraphs {
+      width: 460px !important;
+    }
+
+    &__hash {
+      margin: 0px 10px 0 5px !important;
+    }
+
+    &__option {
+      margin: 0 !important;
+    }
+
+    &__release {
+      margin-right: 10px !important;
+      margin-left: 40px !important;
+    }
+
+    &__profit {
+      margin: 0 5px 0 15px !important;
+    }
+
+    &__efficiency {
+      margin: 0 !important;
+    }
+
+    &__price {
+      margin: 0 29px 0 26px !important;
+    }
+  }
+}
+
+@media screen and (min-device-width: 450px) and (max-device-width: 768px) {
+  .productsList {
+    &__paragraphs {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 449px) {
+  .productsList {
+    &__paragraphs {
+      display: none;
+    }
+  }
+}

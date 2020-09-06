@@ -1,7 +1,6 @@
 .header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 108px;
 
   &__info {
     display: flex;
@@ -79,7 +78,7 @@
   }
 }
 
-@media screen and (max-device-width: 1023px) {
+@media screen and (max-device-width: 768px) {
   .header__info {
     display: none;
   }
