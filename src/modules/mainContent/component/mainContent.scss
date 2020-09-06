@@ -1,5 +1,5 @@
 .mainContent {
-  margin: 159px 88px 100px 89px;
+  margin: 159px 65px 100px 50px;
   display: flex;
   justify-content: space-between;
 
@@ -21,8 +21,8 @@
     line-height: 48px
   }
 
-  &__sorting {
-    margin-right: 60px;
+  &__productsList {
+    margin: 0 20px 0 20px;
   }
 }
 
@@ -31,7 +31,7 @@
   &__minPrice,
   &__maxPrice {
     padding: 7px 88px 8px 11px;
-    width: 212px;
+    width: 120px;
     height: 30px;
     font-family: Open Sans, serif;
     font-style: normal;
@@ -57,6 +57,55 @@
     justify-content: start;
 
     &__news {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-device-width: 1151px) and (max-device-width: 1250px) {
+  .mainContent {
+    &__productsList {
+      margin: 0 50px 0 50px
+    }
+  }
+
+}
+
+@media screen and (min-device-width: 1025px) and (max-device-width: 1150px) {
+  .mainContent {
+    &__productsList {
+      margin: 0 20px 0 20px
+    }
+
+  }
+}
+
+@media screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+  .mainContent {
+    margin: 108px 22px 165px 50px !important;
+
+    &__productsList {
+      margin: 0 40px 0 40px !important;
+    }
+  }
+  .sorting {
+    &__manufacturer,
+    &__minPrice,
+    &__maxPrice {
+      padding: 7px 38px 8px 11px !important;
+      width: 110px !important;
+    }
+  }
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 768px) {
+  .mainContent {
+    display: flex;
+    margin: 38px 0 85px 0;
+    justify-content: center;
+
+    &__sorting,
+    &__columnName {
       display: none;
     }
   }

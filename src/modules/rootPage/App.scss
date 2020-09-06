@@ -2,3 +2,9 @@
   background: #0B0C23;
   padding: 1.94% 2.07% 1.67% 2.31%;
 }
+
+@media screen and (min-device-width: 360px) and (max-device-width: 768px) {
+  .App {
+    min-width: max-content !important;
+  }
+}
