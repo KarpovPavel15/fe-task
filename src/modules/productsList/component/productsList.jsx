@@ -3,6 +3,7 @@ import './productsList.scss';
 import { Product } from '../../../components/product';
 
 export const ProductsList = ({array, arr}) => {
+
     return (
         <table className="productsList">
             <tr className="productsList__paragraphs">

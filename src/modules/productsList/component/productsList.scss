@@ -57,54 +57,6 @@
   }
 }
 
-.product-small {
-  display: none;
-
-  &__price {
-    margin: 25px 0px 25px 90px;
-    width: 100%;
-    display: flex;
-  }
-
-  &__data {
-    margin-right: 75px;
-  }
-
-  &__star {
-    margin-left: 75px;
-  }
-
-  &__img {
-    width: auto;
-    height: 213.28px;
-  }
-
-  &__info {
-    display: flex;
-    width: 100%;
-    margin-top: 20px;
-    align-items: center;
-    margin-bottom: 20px;
-    justify-content: space-evenly;
-  }
-}
-
-.product {
-  display: flex;
-  height: 32px;
-  margin: 10px 0px 10px 0;
-  font-family: Open Sans, serif;
-  font-style: normal;
-  align-items: center;
-  mix-blend-mode: normal;
-  color: #FFFFFF;
-  cursor: pointer;
-  background: #232439;
-  justify-content: space-between;
-  padding: 0 15px 0 15px;
-  font-size: 12px;
-}
-
 @media (min-device-width: 1151px) and (max-device-width: 1250px) {
   .productsList {
     &__paragraphs {
@@ -192,23 +144,6 @@
       display: none;
     }
   }
-  .product-small {
-    display: flex;
-    height: auto;
-    flex-direction: column;
-    margin: 10px 0px 10px 0;
-    font-family: Open Sans, serif;
-    font-style: normal;
-    align-items: center;
-    mix-blend-mode: normal;
-    color: #FFFFFF;
-    cursor: pointer;
-    background: #232439;
-    justify-content: space-between;
-  }
-  .product {
-    display: none;
-  }
 }
 
 @media screen and (min-device-width: 320px) and (max-device-width: 449px) {
@@ -216,36 +151,5 @@
     &__paragraphs {
       display: none;
     }
-  }
-  .product-small {
-    display: flex;
-    height: auto;
-    width: 220px;
-    flex-direction: column;
-    margin: 10px 0px 10px 0;
-    font-family: Open Sans, serif;
-    font-style: normal;
-    align-items: center;
-    mix-blend-mode: normal;
-    color: #FFFFFF;
-    cursor: pointer;
-    background: #232439;
-    justify-content: space-between;
-
-    &__data {
-      margin-right: 20px !important;
-    }
-
-    &__star {
-      margin-left: 20px !important;
-    }
-
-    &__img {
-      width: 180px;
-      height: 156.64px;
-    }
-  }
-  .product {
-    display: none;
   }
 }

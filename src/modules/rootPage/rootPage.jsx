@@ -1,11 +1,11 @@
 import React from 'react';
-import './App.scss';
+import './root-page.scss';
 import { Header } from '../header';
 import { MainContent } from '../mainContent';
 
-export const App = () => {
+export const RootPage = () => {
     return (
-        <div className="App">
+        <div className="root-page">
             <Header/>
             <MainContent/>
             <footer>

@@ -1,41 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './mainContent.scss';
 import news from '../../../images/banner.svg';
 import { ProductsList } from '../../productsList';
-import arrow from '../../../images/arrow.svg'
-import star from '../../../images/star.svg'
-import productImg from '../../../images/14.png'
-import productImg2 from '../../../images/71.png'
+import { useDispatch, useSelector } from 'react-redux';
+import { setMainPageContentRequestAction } from '../actions';
 
 export const MainContent = () => {
     let array = [null, null, 'Release', 'Manufacturer', 'Model', 'Hash', 'Algorithm', 'Efficiency', 'Profit', 'Price'];
-    let arr = [{
-        img: {star},
-        productImg:productImg,
-        arrow: {arrow},
-        data: 'Mar 2019',
-        manufacturer: 'Bitmain',
-        model: 'S9i',
-        hash: '10.5-14.5 th/s',
-        algorithm: 'SHA-256',
-        efficiency: '8.00j/H/s',
-        profit: '$122.8/day',
-        price: '$137-$217'
 
-    },{
-        img: {star},
-        productImg:productImg2,
-        arrow: {arrow},
-        data: 'Mar 2019',
-        manufacturer: 'Bitmain',
-        model: 'S9i',
-        hash: '10.5-14.5 th/s',
-        algorithm: 'SHA-256',
-        efficiency: '8.00j/H/s',
-        profit: '$122.8/day',
-        price: '$137-$217'
+    let dispatch = useDispatch();
+    let {productsInfo} = useSelector(store => store);
 
-    }];
+    useEffect(() => {
+        dispatch(setMainPageContentRequestAction())
+    },[]);
+
     return (
         <main className="mainContent">
             <div className="mainContent__area">
@@ -47,7 +26,7 @@ export const MainContent = () => {
                 </section>
                 <div className="mainContent__productsList">
                     <div className="mainContent__columnName">ON SALE</div>
-                    <ProductsList array={array} arr={arr}/>
+                    <ProductsList array={array} arr={productsInfo}/>
                 </div>
             </div>
             <aside className="mainContent__news">
